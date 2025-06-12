@@ -20,7 +20,7 @@ const References = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="glassmorphism p-1 h-full animate-fade-in">
               <div className="relative h-full w-full overflow-hidden rounded-xl">
                 <img
@@ -51,6 +51,23 @@ const References = () => {
                   </div>
                   <h3 className="text-2xl font-semibold text-white mb-2">TechCorp Annual Gala</h3>
                   <p className="text-gray-300 mb-4">Custom lighting design incorporating brand colors and theme elements, with pristine audio for presentations and live music.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="glassmorphism p-1 h-full animate-fade-in animation-delay-200">
+              <div className="relative h-full w-full overflow-hidden rounded-xl">
+                <img
+                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80"
+                  alt="Monegros Festival 2024"
+                  className="object-cover h-full w-full transition-transform duration-10000 hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-psyco-black-DEFAULT to-transparent flex flex-col justify-end p-6">
+                  <div className="bg-psyco-green-DEFAULT inline-block px-3 py-1 text-xs font-medium text-white rounded-full mb-2 self-start">
+                    Festival
+                  </div>
+                  <h3 className="text-2xl font-semibold text-white mb-2">Monegros Festival 2024 - Industry City PA</h3>
+                  <p className="text-gray-300 mb-4">Professional PA system installation providing crystal-clear sound coverage for the entire festival grounds and multiple stages.</p>
                 </div>
               </div>
             </div>
