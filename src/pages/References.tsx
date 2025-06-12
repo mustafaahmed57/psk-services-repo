@@ -67,7 +67,7 @@ const References = () => {
                     Festival
                   </div>
                   <h3 className="text-2xl font-semibold text-white mb-2">Monegros Festival 2024 - Industry City PA</h3>
-                  <p className="text-gray-300 mb-4">Professional PA system installation providing crystal-clear sound coverage for the entire festival grounds and multiple stages.</p>
+                  <p className="text-gray-300 mb-4">Professional PA system installation providing crystal-clear sound coverage for the entire Industry City Stage in collaboration with KWS and UF.</p>
                 </div>
               </div>
             </div>
