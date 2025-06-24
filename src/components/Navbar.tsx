@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -29,9 +30,9 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
     { name: 'Pricing', path: '/pricing' },
+    { name: 'Portfolio', path: '/references' },
     { name: 'Blog', path: '/blog' },
-    { name: 'References', path: '/references' },
-    { name: 'Booking', path: '/booking' },
+    { name: 'Contact', path: '/booking' },
   ];
 
   return (
@@ -43,12 +44,11 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <NavLink to="/" className="flex items-center">
-          <div className="h-20 w-auto md:h-28 md:w-auto relative">
-            <img 
-              src="/lovable-uploads/5964f950-36a7-430c-a887-4eea91ad4973.png" 
-              alt="PSK Services Logo" 
-              className="h-full w-auto object-contain" 
-            />
+          <div className="flex items-center space-x-2">
+            <div className="h-8 w-8 bg-green-500 rounded-lg flex items-center justify-center">
+              <span className="text-black font-bold text-lg">N</span>
+            </div>
+            <span className="text-2xl font-bold text-white">Neurovis</span>
           </div>
         </NavLink>
 

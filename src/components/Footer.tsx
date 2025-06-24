@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Mail, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Mail, Linkedin, Github, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -11,44 +11,40 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 relative">
-                <img 
-                  src="/lovable-uploads/8acfad30-aa90-4edd-b779-aafd43058584.png" 
-                  alt="Psycotik Crew Logo" 
-                  className="h-full w-full object-contain" 
-                />
+              <div className="h-8 w-8 bg-green-500 rounded-lg flex items-center justify-center">
+                <span className="text-black font-bold text-lg">N</span>
               </div>
               <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-500">
-                Psycotik Crew
+                Neurovis
               </h2>
             </div>
             <p className="text-gray-300 max-w-md">
-              Professional sound and light rental service for events, concerts, and parties. Turning your events into unforgettable experiences.
+              A modern software development agency building intelligent digital solutions for startups, enterprises, and students worldwide.
             </p>
             <div className="flex space-x-4 pt-2">
               <a 
-                href="https://instagram.com" 
+                href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-colors"
               >
-                <Instagram size={20} />
+                <Linkedin size={20} />
               </a>
               <a 
-                href="https://facebook.com/psicptyk.free" 
+                href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-colors"
               >
-                <Facebook size={20} />
+                <Github size={20} />
               </a>
               <a 
-                href="https://youtube.com" 
+                href="https://twitter.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-colors"
               >
-                <Youtube size={20} />
+                <Twitter size={20} />
               </a>
             </div>
           </div>
@@ -85,6 +81,14 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink 
+                  to="/references" 
+                  className="text-gray-300 hover:text-green-400 transition-colors"
+                >
+                  Portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink 
                   to="/blog" 
                   className="text-gray-300 hover:text-green-400 transition-colors"
                 >
@@ -93,18 +97,10 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink 
-                  to="/references" 
-                  className="text-gray-300 hover:text-green-400 transition-colors"
-                >
-                  References
-                </NavLink>
-              </li>
-              <li>
-                <NavLink 
                   to="/booking" 
                   className="text-gray-300 hover:text-green-400 transition-colors"
                 >
-                  Booking
+                  Contact
                 </NavLink>
               </li>
             </ul>
@@ -118,35 +114,20 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3 text-gray-300">
                 <Mail size={16} className="text-green-500" />
-                <span>psk-services@gmail.com</span>
+                <span>hello@neurovis.com</span>
               </li>
-              <li className="flex items-center space-x-3 text-gray-300">
-                <Facebook size={16} className="text-green-500" />
-                <a 
-                  href="https://www.facebook.com/psicptyk.free" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-green-400 transition-colors"
-                >
-                  facebook.com/psicptyk.free
-                </a>
+              <li className="text-gray-300">
+                <span className="block text-sm">Karachi, Pakistan</span>
+                <span className="block text-sm">+92 XXX XXX XXXX</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-green-500/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-green-500/10 mt-12 pt-6 text-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Psycotik Crew. All rights reserved.
+            © 2025 Neurovis. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">
-              Terms of Service
-            </a>
-          </div>
         </div>
       </div>
     </footer>
