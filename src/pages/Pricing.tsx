@@ -11,38 +11,41 @@ const Pricing = () => {
 
   const pricingPlans = [
     {
-      name: "Basic",
-      price: "299",
-      period: "per event",
-      description: "Perfect for small gatherings and intimate events",
+      name: "Starter",
+      price: "999",
+      period: "starting from",
+      description: "Perfect for small businesses and startups",
       icon: <Star className="h-6 w-6" />,
       features: [
-        "Basic sound system setup",
-        "Up to 50 guests",
-        "4 hours of service",
-        "Professional DJ included",
-        "Basic lighting package",
-        "Setup and breakdown included"
+        "Basic web application development",
+        "Responsive design",
+        "Database integration",
+        "Admin panel included",
+        "Basic API development",
+        "3 months support",
+        "Source code included",
+        "Technical documentation"
       ],
       popular: false,
       buttonText: "Get Started",
       color: "border-gray-600"
     },
     {
-      name: "Premium",
-      price: "599",
-      period: "per event", 
-      description: "Ideal for medium-sized events and corporate functions",
+      name: "Professional",
+      price: "2999",
+      period: "starting from", 
+      description: "Ideal for growing businesses and comprehensive solutions",
       icon: <Zap className="h-6 w-6" />,
       features: [
-        "Professional sound system",
-        "Up to 150 guests",
-        "6 hours of service",
-        "Expert DJ with MC services",
-        "Dynamic lighting package",
-        "Wireless microphones (2x)",
-        "Setup and breakdown included",
-        "Technical support on-site"
+        "Full-stack web development",
+        "Mobile app development",
+        "AI/ML integration",
+        "Advanced dashboard & analytics",
+        "Third-party API integrations",
+        "Payment gateway integration",
+        "6 months support & maintenance",
+        "Custom features & modules",
+        "Performance optimization"
       ],
       popular: true,
       buttonText: "Most Popular",
@@ -50,20 +53,21 @@ const Pricing = () => {
     },
     {
       name: "Enterprise",
-      price: "999",
-      period: "per event",
-      description: "Complete solution for large events and festivals",
+      price: "5999",
+      period: "starting from",
+      description: "Complete solution for large-scale applications",
       icon: <Crown className="h-6 w-6" />,
       features: [
-        "Full festival-grade sound system",
-        "Unlimited guests",
-        "8+ hours of service",
-        "Multiple DJ stations",
-        "Complete lighting production",
-        "Wireless microphones (4x)",
-        "LED screens and visual effects",
-        "Dedicated technical crew",
-        "Custom setup consultation"
+        "Full ERP system development",
+        "Multi-platform applications",
+        "Advanced AI/ML solutions",
+        "Microservices architecture",
+        "Cloud deployment & scaling",
+        "Advanced security features",
+        "12+ months support",
+        "Dedicated development team",
+        "Custom integrations & modules",
+        "Performance monitoring & analytics"
       ],
       popular: false,
       buttonText: "Contact Us",
@@ -72,12 +76,12 @@ const Pricing = () => {
   ];
 
   const addOns = [
-    { name: "Extra Hour", price: "75", description: "Extend your event coverage" },
-    { name: "Photo Booth", price: "150", description: "Digital photo booth with props" },
-    { name: "Fog Machine", price: "50", description: "Atmospheric fog effects" },
-    { name: "Extra Microphone", price: "25", description: "Additional wireless microphone" },
-    { name: "LED Screen", price: "200", description: "Large LED display for visuals" },
-    { name: "Special Effects", price: "100", description: "CO2 jets and laser effects" }
+    { name: "Mobile App", price: "1500", description: "iOS/Android native application" },
+    { name: "AI Integration", price: "800", description: "GPT/ML features integration" },
+    { name: "Advanced Analytics", price: "600", description: "Custom reporting dashboard" },
+    { name: "Payment Gateway", price: "300", description: "Secure payment processing" },
+    { name: "Cloud Deployment", price: "400", description: "AWS/Azure hosting setup" },
+    { name: "Extra Support", price: "200", description: "Additional month of support" }
   ];
 
   return (
@@ -91,10 +95,10 @@ const Pricing = () => {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">
-              Simple, Transparent Pricing
+              Transparent Software Development Pricing
             </h1>
             <p className="text-xl text-gray-300 mb-8 animate-fade-in animation-delay-100">
-              Professional sound and lighting packages for events of all sizes. No hidden fees, just exceptional service.
+              Professional software solutions for businesses of all sizes. From web apps to enterprise systems, we deliver quality code at fair prices.
             </p>
           </div>
         </div>
@@ -163,9 +167,9 @@ const Pricing = () => {
       <section className="py-20 px-6 md:px-12 bg-psyco-black-light">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-2">Add-ons & Extras</h2>
+            <h2 className="text-3xl font-bold text-white mb-2">Add-ons & Extensions</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Enhance your event with our additional services and equipment
+              Enhance your software with additional features and integrations
             </p>
           </div>
 
@@ -191,9 +195,9 @@ const Pricing = () => {
       <section className="py-20 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-2">Pricing FAQ</h2>
+            <h2 className="text-3xl font-bold text-white mb-2">Development FAQ</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Common questions about our pricing and packages
+              Common questions about our software development services and pricing
             </p>
           </div>
 
@@ -201,27 +205,27 @@ const Pricing = () => {
             {[
               {
                 question: "What's included in the base price?",
-                answer: "All packages include equipment delivery, setup, operation during your event, and breakdown. Professional staff and basic technical support are always included."
+                answer: "All packages include full source code, technical documentation, basic deployment setup, and the specified support period. No hidden costs or licensing fees."
               },
               {
-                question: "Do you charge extra for travel?",
-                answer: "Events within 50 miles of our base are included. Beyond that, we charge a reasonable travel fee based on distance and setup complexity."
+                question: "How long does development take?",
+                answer: "Timeline varies by complexity: Starter projects (4-8 weeks), Professional projects (8-16 weeks), Enterprise projects (16+ weeks). We provide detailed timelines after requirements analysis."
               },
               {
-                question: "Can I customize a package?",
-                answer: "Absolutely! We can mix and match services to create the perfect package for your event. Contact us for a custom quote."
+                question: "Do you provide ongoing maintenance?",
+                answer: "Yes! All packages include initial support period. We also offer extended maintenance contracts for bug fixes, updates, and feature additions."
               },
               {
-                question: "What's your payment policy?",
-                answer: "We require a 30% deposit to secure your date, with the balance due one week before your event. We accept all major payment methods."
+                question: "What technologies do you use?",
+                answer: "We work with modern tech stacks: React, Node.js, Python, Laravel, Flutter, React Native, AI/ML frameworks, and cloud platforms like AWS and Azure."
               },
               {
-                question: "Do you offer discounts for multiple events?",
-                answer: "Yes! We offer special rates for recurring events, wedding packages, and corporate clients. Contact us to discuss volume discounts."
+                question: "Can you work with our existing systems?",
+                answer: "Absolutely! We specialize in integrating with existing systems, APIs, and databases. We can also help modernize legacy applications."
               },
               {
-                question: "What happens if I need to cancel?",
-                answer: "Cancellations 30+ days before receive full deposit refund. 14-30 days receive 50% refund. Under 14 days are non-refundable."
+                question: "What's your payment structure?",
+                answer: "We typically work with 50% upfront and 50% on delivery for smaller projects. Larger projects can be broken into milestones with payments tied to deliverables."
               }
             ].map((faq, index) => (
               <div
@@ -246,17 +250,17 @@ const Pricing = () => {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="glassmorphism p-8 md:p-12 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Book Your Event?
+              Ready to Start Your Project?
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
-              Get in touch with our team to discuss your requirements and receive a personalized quote for your event.
+              Let's discuss your requirements and create a software solution that drives your business forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/booking"
                 className="bg-psyco-green-DEFAULT hover:bg-psyco-green-dark text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center btn-glow"
               >
-                Book Now
+                Request Quote
               </Link>
               <Link
                 to="/services"
