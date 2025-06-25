@@ -117,8 +117,8 @@ const Footer = () => {
                 <span>hello@neurovis.com</span>
               </li>
               <li className="text-gray-300">
-                <span className="block text-sm">Karachi, Pakistan</span>
-                <span className="block text-sm">+92 XXX XXX XXXX</span>
+                <span className="block text-sm">Islamabad, Pakistan</span>
+                <span className="block text-sm">+92 347 8385839</span>
               </li>
             </ul>
           </div>

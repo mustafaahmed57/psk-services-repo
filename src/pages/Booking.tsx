@@ -19,7 +19,7 @@ const Booking = () => {
     {
       icon: <MessageSquare className="h-8 w-8" />,
       title: "Tell Us About Your Event",
-      description: "Provide details about your event type, venue, and specific requirements."
+      description: "Provide details about your project type, nature, and specific requirements."
     },
     {
       icon: <Headphones className="h-8 w-8" />,
@@ -29,7 +29,7 @@ const Booking = () => {
     {
       icon: <CheckCircle className="h-8 w-8" />,
       title: "Confirmation",
-      description: "Receive your booking confirmation and prepare for an amazing event."
+      description: "Receive your booking confirmation and prepare for an amazing development."
     }
   ];
 
@@ -41,7 +41,7 @@ const Booking = () => {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">Book Our Services</h1>
             <p className="text-xl text-gray-300 mb-8 animate-fade-in animation-delay-100">
-              Ready to elevate your event with professional sound and lighting? Use our simple booking process to secure your date.
+              From fintech tools to AI-powered portals, we design, develop, and deliver custom software solutions tailored to your vision.
             </p>
           </div>
         </div>
@@ -108,29 +108,29 @@ const Booking = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                question: "How far in advance should I book?",
-                answer: "We recommend booking at least 4-6 weeks in advance for standard events, and 2-3 months for large events or peak season dates (May-September and December)."
-              },
-              {
-                question: "Is a deposit required to secure a booking?",
-                answer: "Yes, a 30% deposit is required to secure your booking. The remaining balance is due one week before your event date."
-              },
-              {
-                question: "What happens after I submit my booking request?",
-                answer: "Our team will review your request and contact you within 24-48 hours to discuss details and provide a customized quote."
-              },
-              {
-                question: "Do you provide all necessary equipment?",
-                answer: "Yes, we provide all sound and lighting equipment needed for your event, including setup, operation, and teardown."
-              },
-              {
-                question: "Can I modify my booking after confirmation?",
-                answer: "Yes, modifications can be made up to 2 weeks before your event, subject to equipment and staff availability."
-              },
-              {
-                question: "What is your cancellation policy?",
-                answer: "Cancellations made 30+ days before the event receive a full deposit refund. Cancellations within 14-30 days receive a 50% deposit refund. Cancellations under 14 days are non-refundable."
-              }
+    question: "How soon should I book a project with you?",
+    answer: "We recommend booking at least 2–3 weeks in advance so we can properly plan, scope, and allocate resources. For urgent timelines, we can discuss fast-tracking options."
+  },
+  {
+    question: "Is there an upfront payment required?",
+    answer: "Yes, we require a 30% upfront deposit to initiate the project. The remaining amount is paid in milestones or upon final delivery, depending on the project scope."
+  },
+  {
+    question: "What happens after I submit the booking form?",
+    answer: "You'll receive a confirmation email, and our team will reach out within 24–48 hours to discuss your idea, finalize details, and send a formal proposal."
+  },
+  {
+    question: "Can I request changes during the project?",
+    answer: "Absolutely. We follow an agile approach and welcome client feedback during development. However, major scope changes may affect the timeline and budget."
+  },
+  {
+    question: "What if I don’t know exactly what I need?",
+    answer: "No problem! Just describe your idea in simple terms. We’ll guide you through planning and suggest the best tech solution based on your goal and budget."
+  },
+  {
+    question: "What’s your cancellation or refund policy?",
+    answer: "If canceled within the first 7 days (before development starts), the deposit is fully refundable. Once development begins, the deposit becomes non-refundable."
+  }
             ].map((faq, index) => (
               <div 
                 key={index}
@@ -159,12 +159,12 @@ const Booking = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">+44 123 456 7890</span>
+                    <span className="text-white">+923478385839</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">booking@psycotikcrew.com</span>
+                    <span className="text-white">neurovis@gmail.com</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
@@ -201,7 +201,7 @@ const Booking = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-white mb-1">Site Visits</h3>
-                    <p className="text-gray-300">Request a venue assessment before your event</p>
+                    <p className="text-gray-300">Request a office assessment before your meeting</p>
                   </div>
                 </div>
               </div>

@@ -22,10 +22,23 @@ const availableTimeSlots = [
 ];
 
 const eventTypes = [
-  'Concert', 'Corporate Event', 'Wedding', 'Birthday Party',
-  'Festival', 'Conference', 'Club Night', 'Private Party',
-  'Other'
-];
+  "Fintech Application",
+  "ERP System",
+  "E-commerce Platform",
+  "AI-powered Dashboard",
+  "SaaS Product",
+  "Portfolio Website",
+  "Mobile App (Android/iOS)",
+  "Admin Panel / Dashboard",
+  "CRM / Client Management System",
+  "Inventory Management",
+  "Trading Tool (Forex/Crypto)",
+  "Blog / Content Website",
+  "Custom Web Portal",
+  "API Integration Project",
+  "Other"
+]
+
 
 const BookingCalendar = () => {
   const [date, setDate] = useState<Date | undefined>(undefined);
@@ -50,7 +63,7 @@ const BookingCalendar = () => {
     if (!date || !timeSlot || !eventType) {
       toast({
         title: "Missing information",
-        description: "Please select a date, time slot, and event type",
+        description: "Please select a date, time slot, and project type",
         variant: "destructive"
       });
       return;
@@ -115,10 +128,10 @@ const BookingCalendar = () => {
         </div>
         
         <div className="mt-4">
-          <label className="block text-gray-300 mb-2">Event Type</label>
+          <label className="block text-gray-300 mb-2">Project Type</label>
           <Select value={eventType} onValueChange={setEventType}>
             <SelectTrigger className="bg-psyco-black-DEFAULT border-psyco-green-muted/50">
-              <SelectValue placeholder="Select event type" />
+              <SelectValue placeholder="Select project type" />
             </SelectTrigger>
             <SelectContent className="bg-psyco-black-light border-psyco-green-muted/50">
               {eventTypes.map(type => (
@@ -174,7 +187,7 @@ const BookingCalendar = () => {
           </div>
           
           <div>
-            <label htmlFor="location" className="block text-gray-300 mb-1">Event Location</label>
+            <label htmlFor="location" className="block text-gray-300 mb-1">Project Type</label>
             <Input
               id="location"
               name="location"
@@ -186,7 +199,7 @@ const BookingCalendar = () => {
           </div>
           
           <div>
-            <label htmlFor="details" className="block text-gray-300 mb-1">Event Details</label>
+            <label htmlFor="details" className="block text-gray-300 mb-1">Project Details</label>
             <Textarea
               id="details"
               name="details"
@@ -194,7 +207,7 @@ const BookingCalendar = () => {
               value={formData.details}
               onChange={handleInputChange}
               className="bg-psyco-black-light border-psyco-green-muted/50"
-              placeholder="Please provide any specific requirements or details about your event"
+              placeholder="Please provide any specific requirements or details about your project"
             />
           </div>
           
