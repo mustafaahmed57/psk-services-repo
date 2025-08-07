@@ -159,12 +159,12 @@ const Booking = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">+923478385839</span>
+                    <span className="text-white">++923396800123</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">neurovis@gmail.com</span>
+                    <span className="text-white">neurovis.site@gmail.com</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">

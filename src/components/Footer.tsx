@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Mail, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail,PhoneCallIcon, MapIcon,Linkedin, Github, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -114,11 +114,23 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3 text-gray-300">
                 <Mail size={16} className="text-green-500" />
-                <span>hello@neurovis.com</span>
+                <span>info@neurovis.com</span>
               </li>
-              <li className="text-gray-300">
+              <li className="flex items-center space-x-3 text-gray-300">
+                <Mail size={16} className="text-green-500" />
+                <span>neurovis.site@gmail.com</span>
+              </li>
+              {/* <li className="text-gray-300">
                 <span className="block text-sm">Islamabad, Pakistan</span>
-                <span className="block text-sm">+92 347 8385839</span>
+                <span className="block text-sm">+92 339 6800123</span>
+              </li> */}
+              <li className="flex items-center space-x-3 text-gray-300">
+                <MapIcon size={16} className="text-green-500" />
+                <span>Islamabad, Pakistan</span>
+              </li>
+              <li className="flex items-center space-x-3 text-gray-300">
+                <PhoneCallIcon size={16} className="text-green-500" />
+                <span>+92 339 6800123</span>
               </li>
             </ul>
           </div>
